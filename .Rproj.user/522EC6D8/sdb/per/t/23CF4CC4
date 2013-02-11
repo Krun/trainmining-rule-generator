@@ -1,0 +1,15 @@
+{
+    "contents" : "antequera_elements <- read.csv(\"~/prog/trainmining/Datos/current/antequera_elements.csv\")\nantequera_elements$Column <- NULL\n\nantequera_alimentacion <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"alimentacion\",]\nantequera_alimentacion_ps <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"alimentacion_ps\",]\nantequera_electric_network <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"electric_network\",]\n\nantequera_alim <- rbind(antequera_alimentacion, antequera_alimentacion_ps, antequera_electric_network)\n\nantequera_agujas <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"agujas\",]\n\nantequera_luces_s <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"luces_s\",]\nantequera_luces_r <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"luces_r\",]\nantequera_luces_e <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"luces_e\",]\nantequera_luces_num <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"luces_num\",]\nantequera_luces_m <- antequera_elements[antequera_elements$ELEMENT_TYPE==\"luces_m\",]\nantequera_luces <- rbind(antequera_luces_e,antequera_luces_m,antequera_luces_num,antequera_luces_r,antequera_luces_s)",
+    "created" : 1360600452060.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4215884628",
+    "id" : "23CF4CC4",
+    "lastKnownWriteTime" : 1354114661,
+    "path" : "~/Desktop/trainmining/load_by_element.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
